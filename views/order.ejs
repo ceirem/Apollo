@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <%- include('partials/header') %>
+    </header>
+    <section class="order" id="order">
+        <br><br><br><br>
+        <h1 class="heading "><span>ORDER</span></h1>
+        <div class="row">
+            <form action="submit-order" method="post">
+                <!-- Customer Information -->
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="inputBox" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="inputBox" required><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" class="inputBox" required><br>
+                    <label for="address">Delivery Address:</label>
+                    <input type="text" id="address" name="address" class="inputAdress" required><br>
+                </fieldset>
+        </div>
+
+        <!-- Coffee Selection -->
+        <fieldset>
+            <legend>Coffee Selection</legend>
+            <br>
+            <label for="coffee-type">Select Coffee Type:</label>
+            <select id="coffee-type" name="coffee-type">
+                <option value="white mocha">White Mocha</option>
+                <option value="latte">Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="americano">Americano</option>
+                <!-- Add more options as needed -->
+            </select>
+            <select id="coffee-size" name="coffee-size">
+                <option value="small">Small</option>
+                <option value="tall">Tall</option>      
+                <!-- Add more options as needed -->
+            </select>
+            <input type="number" id="coffee-quantity" name="coffee-quantity" min="1" required><br>
+        </fieldset>
+        <br>
+        <br>
+        <!-- Delivery Schedule -->
+        <fieldset>
+            <legend>Delivery Schedule</legend>
+            <br>
+            <label for="delivery-time">Delivery Time:</label>
+            <select id="delivery-time" name="delivery-time">
+                <option value="now">Now</option>
+                <option value="35-minutes">In 35 Minutes</option>
+                <option value="tomorrow">Tomorrow</option>
+            </select><br>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <br>
+        <input type="submit" class="btn" value=" Submit Order" class="btn">
+        </form>
+    </section>
+    <footer class="footer text-faded text-center py-5">
+        <%- include('partials/footer') %>
+    </footer>
+    <script src=" js/script.js "></script>
+</body>
+
+</html>

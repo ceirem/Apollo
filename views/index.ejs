@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- header section starts-->
+
+    <header>
+        <%- include('partials/header') %>
+
+    </header>
+    <!-- header section ends-->
+
+    <!-- home section starts -->
+
+    <section class="home " id="home ">
+        <div class="content ">
+            <h3>"Coffee is a hug in a mug. "</h3>
+            <p>
+                Welcome to our coffee paradise, where every sip is an adventure in flavor. Expertly roasted from the finest beans, our coffee is a journey in every cup. Sustainable, delicious, unforgettable. Join us and taste the difference.
+            </p>
+            <a href="/menu" class="btn ">Shop now</a>
+        </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- review section starts -->
+    <section class="review " id="review ">
+        <h1 class="heading ">Customer's <span>REVİEW</span></h1>
+        <div class="review-slider ">
+            <div class="wrapper ">
+                <div class="box ">
+                    <img src="image/user.png " alt=" " />
+                    <p>
+                        "I recently ordered from this online coffee shop, and I must say, it exceeded all my expectations! The website was user-friendly, making my shopping experience smooth and enjoyable. "
+                    </p>
+                    <h3>Ense Koksail</h3>
+                    <div class="stars ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                    </div>
+                </div>
+                <div class="box ">
+                    <img src="image/user.png " alt=" " />
+                    <p>
+                        The ordering process was seamless, and the coffee arrived quickly. Each sip was a revelation - rich, aromatic, and perfectly roasted." </p>
+                    <h3>Chris Ballway</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/user.png" alt="" />
+                    <p>
+                        The ordering process was seamless, and the coffee arrived quickly. Each sip was a revelation - rich, aromatic, and perfectly roasted."
+                    </p>
+                    <h3>Adam Fawer</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- review section ends -->
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>CONTACT </span>US</h1>
+        <div class="row">
+            <form action="">
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="Name Surname" />
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="Email" />
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" placeholder="Phone number" />
+                </div>
+                <input type="submit" value="Submit" class="btn" />
+            </form>
+        </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <%- include('partials/footer') %>
+    </section>
+    <!-- footer section ends -->
+
+    <script src=" js/script.js "></script>
+</body>
+
+</html>
